@@ -97,8 +97,10 @@ void UserAppRun(void){
         
     static u32 u32Counter = 0x80;
 
-    while(1){
-        if(PORTB & 0x20){
+    while(1)
+    {
+        if(PORTB & 0x20)
+	{
             u32Counter++;
             PORTB = (u8)u32Counter;
         } 
